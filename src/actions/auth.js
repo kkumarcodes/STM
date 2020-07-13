@@ -38,7 +38,6 @@ export const startLogin = (token, session) => {
 
 
         }).catch(function (error) {
-            // Handle Errors here.
             var errorCode = error.code;
             if (errorCode === 'auth/invalid-custom-token') {
                 alert('The token you provided is not valid.');
